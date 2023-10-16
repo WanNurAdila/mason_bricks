@@ -1,17 +1,5 @@
 bricks:
-  textbox:
+  feature:
     git:
       url: https://github.com/WanNurAdila/mason_bricks.git
-      path: bricks/textbox
-  login_form:
-    git:
-      url: https://github.com/WanNurAdila/mason_bricks.git
-      path: bricks/login_form
-  login_bloc:
-    git:
-      url: https://github.com/WanNurAdila/mason_bricks.git
-      path: bricks/login_bloc
-  bloc_feature:
-    git:
-      url: https://github.com/WanNurAdila/mason_bricks.git
-      path: bricks/bloc_feature
+      path: bricks/feature
