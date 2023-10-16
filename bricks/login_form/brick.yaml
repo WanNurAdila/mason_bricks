@@ -1,4 +1,4 @@
-name: bloc_feature
+name: login_form
 description: A new brick created with the Mason CLI.
 
 # The following defines the brick repository url.
@@ -28,6 +28,6 @@ environment:
 vars:
   name:
     type: string
-    description: The name of your feature [lowercase only]
-    default: feature
-    prompt: What's the name of your feature [lowercase only]
+    description: Your name
+    default: Dash
+    prompt: What is your name?

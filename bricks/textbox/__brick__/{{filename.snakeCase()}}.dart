@@ -1,7 +1,7 @@
 import "package:flutter/material.dart";
 
 {{#isStateless}}
-class {{filename.pascalCase()}}TextBox extends StatelessWidget {
+class {{filename.pascalCase()}} extends StatelessWidget {
   const {{filename.pascalCase()}}({Key? key}) : super(key: key);
 
   @override

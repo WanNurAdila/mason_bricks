@@ -1,9 +1,13 @@
-
 bricks:
-  bloc_feature:
-    path: bricks/bloc_feature
-  widget:
-    path: ./widget
   textbox:
-    path: bricks/textbox
-      
+    git:
+      url: https://github.com/WanNurAdila/mason_bricks.git
+      path: bricks/textbox
+  loginForm:
+    git:
+      url: https://github.com/WanNurAdila/mason_bricks.git
+      path: bricks/login_form
+  loginBloc:
+    git:
+      url: https://github.com/WanNurAdila/mason_bricks.git
+      path: bricks/login_bloc
