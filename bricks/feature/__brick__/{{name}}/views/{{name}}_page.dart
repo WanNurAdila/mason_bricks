@@ -25,10 +25,10 @@ class {{name.pascalCase()}}Page extends StatelessWidget {
       {{/appBar}}
       {{^appBar}}
       appBar: PreferredSize(
-                preferredSize: Size.fromHeight(0),
+                preferredSize:const Size.fromHeight(0),
                 child: AppBar(
                   systemOverlayStyle:
-                      SystemUiOverlayStyle(statusBarColor: Colors.transparent),
+                   const SystemUiOverlayStyle(statusBarColor: Colors.transparent),
                   elevation: 0,
                   backgroundColor: Colors.transparent,
                 ),
