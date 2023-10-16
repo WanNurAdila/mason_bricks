@@ -1,10 +1,10 @@
 import 'package:equatable/equatable.dart';
 
-class {{name.pascalCase()}} extends Equatable {
+class {{name.pascalCase()}}Model extends Equatable {
 
 String params;
 
-{{name.pascalCase()}}({
+{{name.pascalCase()}}Model({
     required this.params,
   });
 

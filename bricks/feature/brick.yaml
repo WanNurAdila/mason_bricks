@@ -31,3 +31,8 @@ vars:
     description: The name of your feature [lowercase only]
     default: feature
     prompt: What's the name of your feature [lowercase only]
+  appBar:
+    type: boolean
+    description: Does the main page have default appbar?
+    default: true
+    prompt: Do you want this page to have default appbar?
