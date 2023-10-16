@@ -1,0 +1,9 @@
+
+bricks:
+  bloc_feature:
+    path: bricks/bloc_feature
+  widget:
+    path: ./widget
+  textbox:
+    path: bricks/textbox
+      
