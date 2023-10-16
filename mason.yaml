@@ -3,11 +3,15 @@ bricks:
     git:
       url: https://github.com/WanNurAdila/mason_bricks.git
       path: bricks/textbox
-  loginForm:
+  login_form:
     git:
       url: https://github.com/WanNurAdila/mason_bricks.git
       path: bricks/login_form
-  loginBloc:
+  login_bloc:
     git:
       url: https://github.com/WanNurAdila/mason_bricks.git
       path: bricks/login_bloc
+  bloc_feature:
+    git:
+      url: https://github.com/WanNurAdila/mason_bricks.git
+      path: bricks/bloc_feature
