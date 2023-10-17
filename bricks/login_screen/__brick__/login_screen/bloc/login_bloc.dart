@@ -12,7 +12,7 @@ class LoginBloc extends Bloc<LoginEvent, LoginState> {
   })  : _loginRepositories = loginRepositories,
         super(const LoginState()) {
     on<LoginStarted>(_onLoginStarted);
-
+    on<Login{{credential.pascalCase()}}Changed>(_on{{credential.pascalCase()}}Changed);
     on<LoginPasswordChanged>(_onPasswordChanged);
     on<LoginSubmitted>(_onSubmitted);
   }

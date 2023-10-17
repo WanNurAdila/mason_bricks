@@ -17,7 +17,6 @@ class LoginState extends Equatable {
   LoginState copyWith({
     FormzSubmissionStatus? status,
     String? failResult,
-    String? email,
     {{credential.pascalCase()}}? {{credential}},
     Password? password,
   }) {

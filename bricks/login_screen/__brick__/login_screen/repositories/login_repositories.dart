@@ -1,6 +1,6 @@
 class LoginRepositories {
   Future<void> logIn({
-    required String username,
+    required String {{credential}},
     required String password,
   }) async {
     await Future.delayed(
@@ -8,16 +8,7 @@ class LoginRepositories {
       () async {
         // Do your api logic here for login
 
-          if (result.hasException) {
-          authFail = result.exception!.graphqlErrors.first.message.toString();
-          throw Exception(authFail);
-        } else if (result.data?['tokenAuth'] != null) {
-          secureToken(result.data?['tokenAuth']['token'],
-              result.data?['tokenAuth']['refreshToken']);
-
-          await UserRepository().getUser();
-          _controller.add(AuthenticationStatus.authenticated);
-        }
+  
       },
     );
   }
