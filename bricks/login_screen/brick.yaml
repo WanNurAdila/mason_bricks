@@ -26,8 +26,8 @@ environment:
 #  * a list of values (enums only)
 #  * an optional separator (list only)
 vars:
-  name:
+  credential:
     type: string
-    description: Your name
+    description: Your login parameter
     default: Dash
-    prompt: What is your name?
+    prompt: What is your login credential name aside from password ? [ username || email || id ]
