@@ -10,8 +10,8 @@
 .svn/
 migrate_working_dir/
 .mason/
-.mason-lock.json
-.pubspec.lock
+mason-lock.json
+pubspec.lock
 
 # IntelliJ related
 *.iml
