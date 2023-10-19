@@ -13,3 +13,28 @@ Getting Started with MASON
 - Run `mason list` to see all the bricks that you can make.
 - Run `mason make` to create your bricks of choice.
 - It is advisable to run `mason.upgrade` before making your bricks in order to make sure you getting the latest version of the bricks.
+
+## List of Bricks
+
+### Mason.yaml
+
+```
+bricks:
+  feature:
+    git:
+      url: https://github.com/WanNurAdila/mason_bricks.git
+      path: bricks/feature
+  login_screen:
+    git:
+      url: https://github.com/WanNurAdila/mason_bricks.git
+      path: bricks/login_screen
+```
+
+### Feature Bricks
+
+- Contains MVVM folder structure with BlocProvider.
+
+### Login Screen
+
+- Contains Login function with BlocListener
+- Contains main file that include ProviderRepositories
