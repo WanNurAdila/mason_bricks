@@ -3,3 +3,4 @@ bricks:
       path: bricks/feature
   login_screen:
       path: bricks/login_screen
+    
