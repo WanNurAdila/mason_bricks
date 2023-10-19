@@ -8,6 +8,9 @@ class LoginRepositories {
       () async {
         // Do your api logic here for login
 
+       if (password != 'Bcss_2013') {
+          throw Exception('authFail');
+        }
   
       },
     );

@@ -152,7 +152,7 @@ return state.status.isInProgress ?  SizedBox(
                       padding: const EdgeInsets.symmetric(vertical: 16),
                       shape: const StadiumBorder()),
                   onPressed: state.password.isValid && state.{{credential}}.isValid &&
-                          state.status.isInProgress == false
+                          state.status.isInitial
                       ? () {
                           context.read<LoginBloc>().add(const LoginSubmitted());
                         }

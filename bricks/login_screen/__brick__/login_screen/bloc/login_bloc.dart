@@ -37,7 +37,7 @@ class LoginBloc extends Bloc<LoginEvent, LoginState> {
     emit(state.copyWith(
       {{credential}}: {{credential}},
       status: {{credential}}.isValid
-          ? FormzSubmissionStatus.inProgress
+          ? FormzSubmissionStatus.initial
           : FormzSubmissionStatus.canceled,
     ));
   }
@@ -50,7 +50,7 @@ class LoginBloc extends Bloc<LoginEvent, LoginState> {
     emit(state.copyWith(
       password: password,
       status: password.isValid
-          ? FormzSubmissionStatus.inProgress
+          ? FormzSubmissionStatus.initial
           : FormzSubmissionStatus.canceled,
     ));
   }
