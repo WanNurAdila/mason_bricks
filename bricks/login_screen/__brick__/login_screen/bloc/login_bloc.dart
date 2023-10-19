@@ -59,7 +59,7 @@ class LoginBloc extends Bloc<LoginEvent, LoginState> {
     LoginSubmitted event,
     Emitter<LoginState> emit,
   ) async {
-    if (state.status.isInProgress) {
+    if (state.status.isInitial) {
       emit(state.copyWith(status: FormzSubmissionStatus.inProgress));
       try {
         await _loginRepositories.logIn(
