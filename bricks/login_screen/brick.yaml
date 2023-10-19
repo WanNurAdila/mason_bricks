@@ -29,5 +29,5 @@ vars:
   credential:
     type: string
     description: Your login parameter
-    default: Dash
+    default: username
     prompt: What is your login credential name aside from password ? [ username || email || id ]

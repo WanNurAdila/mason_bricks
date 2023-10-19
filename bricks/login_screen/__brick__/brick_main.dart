@@ -1,3 +1,5 @@
+// In order for your login screen with bloc properly without this main file. 
+
 import 'package:flutter/material.dart';
 
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -27,6 +29,7 @@ class _MyAppState extends State<MyApp> {
   void initState() {
     super.initState();
   }
+
 
   Widget build(BuildContext context) {
     return RepositoryProvider.value(
