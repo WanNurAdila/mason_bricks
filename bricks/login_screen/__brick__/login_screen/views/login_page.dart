@@ -26,6 +26,7 @@ class LoginPage extends StatelessWidget {
                 RepositoryProvider.of<LoginRepositories>(context));
       }, child: BlocListener<LoginBloc, LoginState>(
         listener: (context, state) {
+          print('status ${state.status}');
           if (state.status.isFailure) {
             //run function if login failure
           } else if (state.status.isSuccess) {

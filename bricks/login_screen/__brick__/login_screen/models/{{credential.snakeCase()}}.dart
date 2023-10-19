@@ -19,7 +19,7 @@ class {{credential.pascalCase()}} extends FormzInput<String, {{credential.pascal
 
       return regExp.hasMatch(email)  == true ? null :{{credential.pascalCase()}}ValidationError.empty
 
-    {{/credential}}
+    {{/isEmail}}
     {{^isEmail}}
       return value?.isNotEmpty == true ? null : {{credential.pascalCase()}}ValidationError.empty;
     {{/isEmail}}
