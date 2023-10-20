@@ -11,18 +11,18 @@ class {{credential.pascalCase()}} extends FormzInput<String, {{credential.pascal
 
     bool isEmail = {{credential}} == 'email' ? true : false
 
-    // {{#isEmail}}
+    {{#isEmail}}
     String p =
         r'^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$';
 
     RegExp regExp = new RegExp(p);
 
-      return regExp.hasMatch(email)  == true ? null :{{credential.pascalCase()}}ValidationError.empty
+      return regExp.hasMatch({{credential}})  == true ? null :{{credential.pascalCase()}}ValidationError.empty
 
-    // {{/isEmail}}
-    // {{^isEmail}}
-    //   return value?.isNotEmpty == true ? null : {{credential.pascalCase()}}ValidationError.empty;
-    // {{/isEmail}}
+    {{/isEmail}}
+    {{^isEmail}}
+      return value?.isNotEmpty == true ? null : {{credential.pascalCase()}}ValidationError.empty;
+    {{/isEmail}}
 
     
   }
