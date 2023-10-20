@@ -9,20 +9,18 @@ class {{credential.pascalCase()}} extends FormzInput<String, {{credential.pascal
   @override
   {{credential.pascalCase()}}ValidationError? validator(String? value) {
 
-    bool isEmail = {{credential}} == 'email' ? true : false
-
-    {{#isEmail}}
-    String p =
-        r'^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$';
-
-    RegExp regExp = new RegExp(p);
-
-      return regExp.hasMatch({{credential}})  == true ? null :{{credential.pascalCase()}}ValidationError.empty
-
-    {{/isEmail}}
-    {{^isEmail}}
+    {{#emailRegex}}
+    RegExp regex = RegExp(
+        r"""^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-8])(?=.*?[!@#_$&*.|'?`%+=:;,^~\[\]\(\)\{\}\</>/-/|"]).{8,}$""");
+       bool valid = false;
+    if (regex.hasMatch(value)) {
+      valid = true;
+    }    
+       return valid == true ? null : {{credential.pascalCase()}}ValidationError.empty;
+    {{/emailRegex}}
+    {{^emailRegex}}
       return value?.isNotEmpty == true ? null : {{credential.pascalCase()}}ValidationError.empty;
-    {{/isEmail}}
+    {{/emailRegex}}
 
     
   }

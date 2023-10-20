@@ -31,3 +31,8 @@ vars:
     description: Your login parameter
     default: username
     prompt: What is your login credential name aside from password ? [ username || email || id ]
+  emailRegex:
+    type: boolean
+    description: Email regex
+    default: false
+    prompt: Do you need email regex for your credential?
