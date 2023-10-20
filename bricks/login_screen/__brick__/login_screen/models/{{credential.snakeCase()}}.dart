@@ -11,7 +11,7 @@ class {{credential.pascalCase()}} extends FormzInput<String, {{credential.pascal
 
     {{#emailRegex}}
     RegExp regex = RegExp(
-        r"""^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-8])(?=.*?[!@#_$&*.|'?`%+=:;,^~\[\]\(\)\{\}\</>/-/|"]).{8,}$""");
+        r'^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$');
        bool valid = false;
     if (regex.hasMatch(value!)) {
       valid = true;
