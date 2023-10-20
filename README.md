@@ -36,5 +36,6 @@ bricks:
 
 ### Login Screen
 
-- Contains Login function with BlocListener
-- Contains main file that include ProviderRepositories
+- Contains Login function with BlocListener.
+- Contains main file that include ProviderRepositories.
+- Contains email regex option.
