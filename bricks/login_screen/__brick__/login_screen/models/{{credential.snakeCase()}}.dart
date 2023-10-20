@@ -13,7 +13,7 @@ class {{credential.pascalCase()}} extends FormzInput<String, {{credential.pascal
     RegExp regex = RegExp(
         r"""^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-8])(?=.*?[!@#_$&*.|'?`%+=:;,^~\[\]\(\)\{\}\</>/-/|"]).{8,}$""");
        bool valid = false;
-    if (regex.hasMatch(value)) {
+    if (regex.hasMatch(value!)) {
       valid = true;
     }    
        return valid == true ? null : {{credential.pascalCase()}}ValidationError.empty;
