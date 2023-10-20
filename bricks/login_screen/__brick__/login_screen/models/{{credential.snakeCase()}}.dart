@@ -9,7 +9,7 @@ class {{credential.pascalCase()}} extends FormzInput<String, {{credential.pascal
   @override
   {{credential.pascalCase()}}ValidationError? validator(String? value) {
 
-    bool isEmail = {{credetial}} == 'email' ? true : false
+    bool isEmail = {{credential}} == 'email' ? true : false
 
     {{#isEmail}}
     String p =
