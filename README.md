@@ -35,7 +35,6 @@ bricks:
 - Contains MVVM folder structure with BlocProvider.
 
 **Dependencies**
-
 - https://pub.dev/packages/equatable
 
 
@@ -46,7 +45,6 @@ bricks:
 - Contains email regex option.
 
 **Dependencies**
-
 - https://pub.dev/packages/flutter_bloc
 - https://pub.dev/packages/equatable
 - https://pub.dev/packages/formz 
