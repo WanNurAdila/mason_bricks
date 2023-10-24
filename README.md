@@ -36,6 +36,7 @@ bricks:
 
 **Dependencies**
 - https://pub.dev/packages/equatable
+- https://pub.dev/packages/flutter_bloc
 
 
 ### Login Screen
