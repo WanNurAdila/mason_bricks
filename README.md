@@ -28,6 +28,10 @@ bricks:
     git:
       url: https://github.com/WanNurAdila/mason_bricks.git
       path: bricks/login_screen
+  dynamic_textbox:
+    git:
+      url: https://github.com/WanNurAdila/mason_bricks.git
+      path: bricks/dynamic_textbox
 ```
 
 ### Feature Bricks
@@ -49,3 +53,8 @@ bricks:
 - https://pub.dev/packages/flutter_bloc
 - https://pub.dev/packages/equatable
 - https://pub.dev/packages/formz 
+
+
+### Dynamic Textbox
+
+- Dynamic and reusable textbox
