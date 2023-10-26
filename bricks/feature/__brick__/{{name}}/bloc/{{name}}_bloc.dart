@@ -11,7 +11,7 @@ class {{name.pascalCase()}}Bloc extends Bloc<{{name.pascalCase()}}Event, {{name.
   }
 
   Future<void> _on{{name.pascalCase()}}Fetched (
-      {{name.pascalCase()}}Fetched campaigns, Emitter<{{name.pascalCase()}}State> emit) async {
+      {{name.pascalCase()}}Fetched results, Emitter<{{name.pascalCase()}}State> emit) async {
             try {      
       if (state.status == {{name.pascalCase()}}Status.initial) {
         

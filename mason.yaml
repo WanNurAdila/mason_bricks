@@ -3,4 +3,6 @@ bricks:
       path: bricks/feature
   login_screen:
       path: bricks/login_screen
+  dynamic_textbox:
+      path: bricks/dynamic_textbox
     
