@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:rive/rive.dart';
 
-class {{name}}RivePage extends StatefulWidget {
+class {{name.pascalCase()}}RivePage extends StatefulWidget {
   @override
-  {{name}}RivePageState createState() =>{{name}} RivePageState();
+  {{name.pascalCase()}}RivePageState createState() =>{{name.pascalCase()}}RivePageState();
 }
 
-class {{name}}RivePageState extends State<{{name}}RivePage> {
+class {{name.pascalCase()}}RivePageState extends State<{{name.pascalCase()}}RivePage> {
 // State machine inputs.
 
   SMITrigger? _trigger;
