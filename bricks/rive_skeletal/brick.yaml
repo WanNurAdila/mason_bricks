@@ -30,4 +30,4 @@ vars:
     type: string
     description: Your rive file name
     default: Dash
-    prompt: What is your rive file name going to be?
+    prompt: What is your rive file name going to be? 
