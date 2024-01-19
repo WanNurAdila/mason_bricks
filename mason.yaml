@@ -5,4 +5,6 @@ bricks:
       path: bricks/login_screen
   dynamic_textbox:
       path: bricks/dynamic_textbox
+  rive_skeletal:
+      path: bricks/rive_skeletal
     

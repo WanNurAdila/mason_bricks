@@ -32,6 +32,10 @@ bricks:
     git:
       url: https://github.com/WanNurAdila/mason_bricks.git
       path: bricks/dynamic_textbox
+  rive_skeletal:
+    git:
+      url: https://github.com/WanNurAdila/mason_bricks.git
+      path: bricks/rive_skeletal
 ```
 
 ### Feature Bricks
@@ -58,3 +62,10 @@ bricks:
 ### Dynamic Textbox
 
 - Dynamic and reusable textbox
+
+### Rive Skeletal
+
+- A skeletal for Rive 
+
+**Dependencies**
+- https://pub.dev/packages/rive
