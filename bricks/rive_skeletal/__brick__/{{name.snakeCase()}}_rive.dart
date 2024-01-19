@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:rive/rive.dart';
 
 class {{name.pascalCase()}}RivePage extends StatefulWidget {
+
+  const {{name.pascalCase()}}RivePage({super.key});
+
   @override
   {{name.pascalCase()}}RivePageState createState() =>{{name.pascalCase()}}RivePageState();
 }
