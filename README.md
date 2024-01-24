@@ -69,3 +69,8 @@ bricks:
 
 **Dependencies**
 - https://pub.dev/packages/rive
+
+
+### Hero Animation
+
+- Simple and reusable hero animation

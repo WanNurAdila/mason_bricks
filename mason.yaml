@@ -7,4 +7,6 @@ bricks:
       path: bricks/dynamic_textbox
   rive_skeletal:
       path: bricks/rive_skeletal
+  hero_animation:
+      path: bricks/hero_animation
     
